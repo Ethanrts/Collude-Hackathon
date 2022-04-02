@@ -41,18 +41,11 @@
 
 <body>
     <div class="signin">
-        <div class="popup">
-            <form>
-                <label for="fname"></label>
-                <input type="text" id="email" name="email" placeholder="username"><br><br>
-                <label for="lname"></label>
-                <input type="text" id="password" name="password" placeholder="password"><br><br>
-                <input type="submit" value="sign in">
-            </form>
-
-
-        </div>
-
+        <form action="/cgi-bin/authone.py" method="get">
+            <input type="email" id="email" name="email" placeholder="username">
+            <input type="password" id="password" name="password" placeholder="password">
+            <input type="submit" value="sign in">
+        </form>
     </div>
 </body>
 
