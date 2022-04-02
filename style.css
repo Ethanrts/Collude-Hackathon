@@ -55,6 +55,28 @@ h2 {
     position: fixed;
 }
 
+.signup {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 200;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home2 {
+    width: 100%;
+    z-index: 2;
+    background: url(./images/signup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
 input {
     border: 2px solid #333;
     background-color: white;
@@ -82,6 +104,14 @@ input {
     z-index: 200;
 }
 
+.signup2 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 200;
+}
+
 .home1 button {
     border: 2px solid #333;
     background-color: white;
@@ -96,6 +126,26 @@ input {
     margin-left: 40px;
     margin-top: 20px;
     z-index: 200;
+}
+
+.home2 button {
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    font: 0.75rem / 1.5 noh-sori;
+    display: page;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    width: 80%;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-top: 20px;
+    z-index: 200;
+}
+
+.home2 form {
+    margin-top: 55% !important;
 }
 
 h2 {
