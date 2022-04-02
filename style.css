@@ -43,6 +43,37 @@ h2 {
     width: 100vw;
 }
 
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.1;
+}
+
+.close:hover {
+    opacity: none;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: black;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
 .home1 {
     width: 100%;
     z-index: 2;
@@ -92,7 +123,7 @@ input {
     z-index: 200;
 }
 
-.format {
+.home1 .format {
     margin-top: 90%;
 }
 
@@ -148,7 +179,7 @@ input {
     margin-top: 55% !important;
 }
 
-h2 {
+.home1 h2 {
     z-index: 100;
     font-family: noh-sori, sans-serif;
     font-size: 50px;
