@@ -49,7 +49,7 @@ h2 {
     top: 32px;
     width: 32px;
     height: 32px;
-    opacity: 0.1;
+    opacity: 2;
 }
 
 .close:hover {
@@ -175,7 +175,7 @@ input {
     z-index: 200;
 }
 
-.home2 form {
+.home2 .format {
     margin-top: 55% !important;
 }
 
