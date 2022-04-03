@@ -1,11 +1,20 @@
 # 'from urllib.request import Request
-# import firebase_admin
+import firebase_admin
+from firebase_admin import credentials, firestore
+
 import pyrebase
 from tkinter import EW
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 # import cgi
 # form = cgi.FieldStorage()
+
+# initialize sdk
+cred = credentials.Certificate("collude-58309-firebase-adminsdk-qd4m1-1925d38b46.json")
+firebase_admin.initialize_app(cred)
+# initialize firestore instance
+firestore_db = firestore.client()
+
 
 
 app = Flask(__name__)
@@ -57,19 +66,26 @@ def login():
 
 @app.route('/list')
 def list_page():
-  print("here")
-  ## add items to database 
+  ## add items to database
   ## front end needs to create tags for each product name and its category 
     ## if we create tags, clicking on them will add them to the list .. so we may just drop quantities altogether ... 
     ## 
 
+  category_string = ''
+  product_name = 'Almond Milk'
+  quantity_var = ''
+  firestore_db.collection(u'Grocery_Tags').add({'Category': 'Dairy', 'Product Name': product_name})
 
+  snapshots = list(firestore_db.collection(u'Grocery_Tags').get())
+  for snapshot in snapshots:
+    print(snapshot.to_dict())
 
 @app.route('/sign_up')
 def signup():
     email = request.args.get('email')
     password = request.args.get('password')
-    isLoggedIn = True 
+    password2 = request.args.get('password2')
+    isLoggedIn = True if (password == password2) else False
    
     ## after signing up, display some sort of success screen -- html 
     ## go striaght to the list_page / grocery list web page 
@@ -104,3 +120,6 @@ def signup():
 
 # if __name__ == '__main__':
 #     app.run()
+
+#only here for adding the gorcery tags below
+list_page()
