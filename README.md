@@ -27,6 +27,15 @@ Collude was built using elements of Python, Javascript, HTML, and CSS, combining
 
 The project faced many setbacks and shortcomings during the allotted 24 hours; we quickly figured out that we hardly knew a thing about building or connecting the front and back ends of the app. Despite that, we spent the first half day understanding and slowly working through the basics of the firestore API, databases, our login system, and coding a dynamic display for the list screen.
 
+## Future Additions 
+
+In the future, we would like to add the following:
+- A "share list" feature to share with friends
+- An "edit list" feature to add and delete from list
+- A check box feature to check off items
+- A feature to add pictures of groceries to the list 
+- Additional login options (through firebase)
+- Notifications
 
 
 ## Application Design & Screenshots
