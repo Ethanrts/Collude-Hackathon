@@ -37,6 +37,8 @@
         })(document);
     </script>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js">
+    </script>
 </head>
 
 <body>
@@ -44,16 +46,16 @@
         <div class="home1">
             <a href="index.html" class="close"></a>
             <h2>Welcome</h2>
-            <form action="{{ url_for('add_region') }}" method="post" class="format">
+            <div class="format">
                 <input type="email" id="email" name="email" placeholder="username">
                 <input type="password" id="password" name="password" placeholder="password">
-                <input type="submit" value="sign in">
-            </form>
+                <button onclick="submit()">sign in</button>
+                <!-- <input type="submit" value="sign in" onclick="submit()"> -->
+            </div>
             <a href="signup.html" class="signup">
                 <button>sign up here</button>
             </a>
         </div>
-        <!-- <img class="home1" src="./images/homepage.jpg" alt="home"> -->
     </div>
 </body>
 
