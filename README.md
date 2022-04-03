@@ -17,13 +17,13 @@ Therefore, this app is designed to reduce the inefficiency of having to update o
 ## Development
 
 Collude was built using elements of Python, Javascript, HTML, and CSS, combining front and back-end to create a fully sufficient application. 
-- Back-end Python for login and security
+- Back-end Python for login, security, and connection to database
 - Javascript for client-server connection
 - HTML and CSS for front-end aesthetics and appearance
 
 ## Challenges
 
-The project faced many setbacks and shortcomings during the allotted 24 hours; we quickly figured out that we hardly knew a thing about building or connecting the front and back ends of the app. Despite that, we spent the first half day understanding and slowly working through the basics of python's firestore api for our login system, then coding a dynamic display for the list screen.
+The project faced many setbacks and shortcomings during the allotted 24 hours; we quickly figured out that we hardly knew a thing about building or connecting the front and back ends of the app. Despite that, we spent the first half day understanding and slowly working through the basics of the firestore API, our login system, and coding a dynamic display for the list screen.
 
 
 
