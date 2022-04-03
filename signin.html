@@ -44,7 +44,7 @@
         <div class="home1">
             <a href="index.html" class="close"></a>
             <h2>Welcome</h2>
-            <form action="/cgi-bin/authone.py" method="get" class="format">
+            <form action="{{ url_for('add_region') }}" method="post" class="format">
                 <input type="email" id="email" name="email" placeholder="username">
                 <input type="password" id="password" name="password" placeholder="password">
                 <input type="submit" value="sign in">
