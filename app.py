@@ -1,13 +1,15 @@
 # 'from urllib.request import Request
 import firebase_admin
 from firebase_admin import credentials, firestore
-
+from creaet_db import my_func
 import pyrebase
 from tkinter import EW
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 # import cgi
 # form = cgi.FieldStorage()
+
+
 
 # initialize sdk
 cred = credentials.Certificate("collude-58309-firebase-adminsdk-qd4m1-1925d38b46.json")
@@ -63,14 +65,8 @@ def list_page():
     ## if we create tags, clicking on them will add them to the list .. so we may just drop quantities altogether ... 
     ## 
 
-  category_string = ''
-  product_name = ''
-  quantity_var = ''
-  #firestore_db.collection(u'Grocery_Tags').add({'Category': 'Protein', 'Product Name': 'A5 Wagyu'})
+   return jsonify(my_func())
 
-  snapshots = list(firestore_db.collection(u'Grocery_Tags').get())
-  for snapshot in snapshots:
-    print(snapshot.to_dict())
 
 @app.route('/sign_up')
 def signup():
@@ -114,4 +110,3 @@ def signup():
 #     app.run()
 
 #only here for adding the gorcery tags below
-list_page()
