@@ -20,7 +20,7 @@ Therefore, this app is designed to reduce the inefficiency of having to update o
 
 Collude was built using elements of Python, Javascript, HTML, and CSS, combining front and back-end to create a fully sufficient application. 
 - Back-end Python for login, security, and connection to database
-- Javascript for client-server connection
+- Javascript for client-server connection and front-end
 - HTML and CSS for front-end aesthetics and appearance
 
 ## Challenges
