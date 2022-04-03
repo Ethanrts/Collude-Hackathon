@@ -2,7 +2,8 @@
 Hello, we are team Collude, bringing you a collaborative grocery list application at Citrus Hack 2022. We are a team of four novice python, javascript, html, and css users, three among which who are first-time hackathon participants. We'd like to give a shout-out to all the organizers and mentors who helped make our project a reality!
 
 ## Why Collude?
-Welcome to Collude; we are an app developed by and for grocery shoppers looking to maximize their efficiency in going about their shopping routines. The idea for a collaborative grocery list was spawned as a result of members agreeing that coordinating grocery shopping with room/housemates is a complete mess in its current state.  Therefore, this app is designed to reduce the inefficiency of having to update others of changes through a group chat while switching apps to a notepad or checklist. We knew we wanted our project to have the identity of creating a solution to that, and preliminary ideas centered around the dynamic list and a secure login system. \
+Welcome to Collude; we are an app developed by and for grocery shoppers looking to maximize their efficiency in going about their shopping routines. The idea for a collaborative grocery list was spawned as a result of members agreeing that coordinating grocery shopping with room/housemates is a complete mess in its current state. Additionally, the psychological manipulation of major grocery store chains in order to get broke students to spend more money-- just kidding. 
+Therefore, this app is designed to reduce the inefficiency of having to update others of changes through a group chat while switching apps to a notepad or checklist. We knew we wanted our project to have the identity of creating a solution to that, and preliminary ideas centered around the dynamic list and a secure login system. 
 
 ## Features
 - Secure sign-in using email and password authentication
