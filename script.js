@@ -5,7 +5,7 @@ function submit() {
     let pw = document.getElementById('password').value;
 
     console.log(em);
-    fetch('https://1e5f-169-235-64-155.ngrok.io/login?email=' + em + '&password=' + pw)
+    fetch('https://b879-169-235-64-155.ngrok.io/login?email=' + em + '&password=' + pw)
         .then(response => response.json())
         .then(function(response) {
             if (response.status) {
@@ -32,7 +32,7 @@ function submit2() {
     console.log(emi);
     console.log(pwa);
     console.log(pwa2);
-    fetch('https://1e5f-169-235-64-155.ngrok.io/sign_up?email=' + emi + '&password=' + pwa + '&password2=' + pwa2)
+    fetch('https://b879-169-235-64-155.ngrok.io/sign_up?email=' + emi + '&password=' + pwa + '&password2=' + pwa2)
         .then(response => response.json())
         .then(function(response) {
             if (response.status) {
@@ -50,7 +50,7 @@ function submit2() {
 }
 
 function load() {
-    fetch('https://1e5f-169-235-64-155.ngrok.io/list')
+    fetch('https://b879-169-235-64-155.ngrok.io/list')
         .then(response => response.json())
         .then(function(response) {
             console.log(response)
@@ -80,14 +80,6 @@ function add(item) {
 }
 
 function submit3() {
-    // fetch('https://1e5f-169-235-64-155.ngrok.io/result')
-    //     .then(response => response.json())
-    //     .then(function(response) {
-    //         for (i = 0; i < clickedStuff.length; i++) {
-    //             document.write(clickedStuff[i] + "<br />");
-    //         }
-
-    //     })
     window.location = './result.html?cart=' + JSON.stringify(clickedStuff);
 }
 

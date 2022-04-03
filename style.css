@@ -239,8 +239,17 @@ input {
     font-family: noh-sori, sans-serif;
     font-size: 40px;
     top: 80px;
-    left: 15%;
+    left: 20%;
     top: 20%;
+}
+
+.home4 h1 {
+    z-index: 100;
+    font-family: noh-sori, sans-serif;
+    font-size: 30px;
+    top: 80px;
+    left: 14%;
+    top: 3%;
 }
 
 .result {
@@ -253,4 +262,51 @@ input {
     height: 100vh;
     width: 100vw;
     position: fixed;
+}
+
+.list {
+    width: 100%;
+    z-index: 2;
+    background: url(./images/pickgroc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.home4 button {
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    font: 1rem / 1.5 noh-sori;
+    display: page;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    width: 80%;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-top: 5%;
+    z-index: 2000;
+}
+
+#flist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-size: 20px;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 30%;
+    overflow-y: scroll;
 }
