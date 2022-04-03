@@ -1,0 +1,312 @@
+html,
+body {
+    background-color: #fff;
+    font-family: noh-sori, sans-serif;
+    overflow-x: hidden !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    scroll-behavior: smooth;
+}
+
+.home {
+    width: 100%;
+    z-index: 2;
+}
+
+h1 {
+    z-index: 100;
+    position: relative;
+    position: absolute;
+    font-family: noh-sori, sans-serif;
+    font-size: 65px;
+    top: 20%;
+    left: 25%;
+}
+
+h2 {
+    z-index: 100;
+    position: relative;
+    position: absolute;
+    font-family: noh-sori, sans-serif;
+    font-size: 20px;
+    top: 33%;
+    left: 23%;
+}
+
+.signin {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 200;
+    height: 100vh;
+    width: 100vw;
+}
+
+.close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 2;
+}
+
+.close:hover {
+    opacity: none;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: black;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.home1 {
+    width: 100%;
+    z-index: 2;
+    background: url(./images/signin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.home3 {
+    width: 100%;
+    z-index: 2;
+    background: url(./images/welcomepage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.signup {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 200;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home2 {
+    width: 100%;
+    z-index: 2;
+    background: url(./images/signup.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+input {
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 0.25rem;
+    font: 0.75rem / 1.5 noh-sori;
+    display: page;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    width: 80%;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-top: 40px;
+    z-index: 200;
+}
+
+.home1 .format {
+    margin-top: 90%;
+}
+
+.signup {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 200;
+}
+
+.signup2 {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 200;
+}
+
+.home1 button {
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    font: 0.75rem / 1.5 noh-sori;
+    display: page;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    width: 80%;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-top: 20px;
+    z-index: 200;
+}
+
+.home2 button {
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    font: 0.75rem / 1.5 noh-sori;
+    display: page;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    width: 80%;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-top: 20px;
+    z-index: 200;
+}
+
+.home2 .format {
+    margin-top: 55% !important;
+}
+
+.home1 h2 {
+    z-index: 100;
+    font-family: noh-sori, sans-serif;
+    font-size: 50px;
+    top: 80px;
+    left: 22%;
+}
+
+.welcome {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+    z-index: 200;
+    height: 100vh;
+    width: 100vw;
+}
+
+.home3 h2 {
+    z-index: 100;
+    font-family: noh-sori, sans-serif;
+    font-size: 40px;
+    top: 80px;
+    left: 15%;
+    top: 20%;
+}
+
+.home3 button {
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    font: 1rem / 1.5 noh-sori;
+    display: page;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    width: 80%;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-top: 85%;
+    z-index: 200;
+}
+
+.result h2 {
+    z-index: 100;
+    font-family: noh-sori, sans-serif;
+    font-size: 40px;
+    top: 80px;
+    left: 20%;
+    top: 20%;
+}
+
+.home4 h1 {
+    z-index: 100;
+    font-family: noh-sori, sans-serif;
+    font-size: 30px;
+    top: 80px;
+    left: 14%;
+    top: 3%;
+}
+
+.result {
+    width: 100%;
+    z-index: 2;
+    background: url(./images/welcomepage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.list {
+    width: 100%;
+    z-index: 2;
+    background: url(./images/pickgroc.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
+
+.home4 button {
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 0.25rem;
+    margin-bottom: 2rem;
+    font: 1rem / 1.5 noh-sori;
+    display: page;
+    box-sizing: border-box;
+    padding: 0.5rem 0.75rem;
+    width: 80%;
+    text-decoration: none;
+    margin-left: 40px;
+    margin-top: 5%;
+    z-index: 2000;
+}
+
+#flist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    font-size: 20px;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin-top: 30%;
+    overflow-y: scroll;
+}
