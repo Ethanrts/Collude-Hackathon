@@ -10,7 +10,7 @@ function submit() {
         .then(function(response) {
             if (response.status) {
                 document.getElementById('email');
-                window.location = './list.html?status=' + response.status;
+                window.location = './welcome.html?status=' + response.status;
 
             } else {
                 document.getElementById('email');
@@ -35,9 +35,8 @@ function submit2() {
     fetch('https://c1dc-169-235-64-155.ngrok.io/sign_up?email=' + emi + '&password=' + pwa + '&password2=' + pwa2)
         .then(response => response.json())
         .then(function(response) {
-            console.log("REPSONSEPFINSE", response)
             if (response.status) {
-                window.location = './list.html?status=' + response.status;
+                window.location = './welcome.html?status=' + response.status;
                 document.getElementById('email');
 
             } else {
