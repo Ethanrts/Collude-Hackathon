@@ -33,7 +33,9 @@ The project faced many setbacks and shortcomings during the allotted 24 hours; w
 ![](https://snipboard.io/zp5Tei.jpg) 
 ![](https://snipboard.io/p69HYG.jpg) 
 ![](https://snipboard.io/MrDliv.jpg) 
-![](https://snipboard.io/quXsxG.jpg)
+![](https://snipboard.io/LphzrG.jpg)
+![](https://snipboard.io/Pn26z7.jpg)
+![](https://snipboard.io/iMAb2d.jpg)
 
 
 
