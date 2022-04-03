@@ -14,13 +14,26 @@ firestore_db = firestore.client()
 category_string = ''
 product_name = 'Almond Milk'
 quantity_var = ''
-firestore_db.collection(u'Grocery_List').add({'Category': 'Dairy', 'Product Name': product_name, 'Quantity': 1})
+# firestore_db.collection(u'Grocery_List').add({'Category': 'Dairy', 'Product Name': product_name, 'Quantity': 1})
 
 
-snapshots = list(firestore_db.collection(u'Grocery_List').get())
+snapshots = list(firestore_db.collection(u'Grocery_Tags').get())
 for snapshot in snapshots:
     print(snapshot.to_dict())
 
+temp = ""
+temp2 = ""
+count = 3
 
+while (count > 0):
+    for snapshot in snapshots:
+        if (snapshot.to_dict().get('Category') != temp):
+            temp = snapshot.to_dict().get('Category')
+            count = count - 1
+            print(snapshot.to_dict().get('Category'))
 
+        if (count == 0):
+            break
+
+index = open("list.html").read().format(first_header='testing')
 
