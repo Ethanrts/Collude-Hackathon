@@ -24,16 +24,35 @@ for snapshot in snapshots:
 temp = ""
 temp2 = ""
 count = 3
-
-while (count > 0):
+veg_cat = {}
+def my_func():
     for snapshot in snapshots:
-        if (snapshot.to_dict().get('Category') != temp):
-            temp = snapshot.to_dict().get('Category')
-            count = count - 1
-            print(snapshot.to_dict().get('Category'))
+        category = str(snapshot.to_dict().get('Category'))
+        pname = str(snapshot.to_dict().get('Product Name'))
+        #print(veg_cat.get('Category') is None)
+        if veg_cat.get(category) is None:
+            veg_cat[category] = [pname]
 
-        if (count == 0):
-            break
+        else:
+            #print(veg_cat[category])
+            veg_cat[category].append(pname)
 
-index = open("list.html").read().format(first_header='testing')
+        #
+        # if (snapshot.to_dict().get('Category') != temp):
+        #     temp = snapshot.to_dict().get('Category')
+        #     # count = count - 1
+        #
+        #     if temp == 'Vegetables':
+        #         key = snapshot.to_dict().get('Category')
+        #         veg_cat[key] = snapshot.to_dict().get('Product Name')
+        #
+        #
+        #     print(snapshot.to_dict().get('Category'))
+        #
+
+    print(veg_cat)
+    return veg_cat
+
+
+    #index = open("list.html").read().format(first_header='testing')
 

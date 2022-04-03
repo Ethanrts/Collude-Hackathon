@@ -1,13 +1,11 @@
-# from urllib.request import Request
-# import firebase_admin
-# from firebase_admin import credentials, firestore
+from creaet_db import my_func
 
-# import pyrebase
-from tkinter import EW
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 # import cgi
 # form = cgi.FieldStorage()
+
+
 
 # initialize sdk
 # cred = credentials.Certificate("collude-58309-firebase-adminsdk-qd4m1-1925d38b46.json")
@@ -62,8 +60,9 @@ def list_page():
   ## front end needs to create tags for each product name and its category 
     ## if we create tags, clicking on them will add them to the list .. so we may just drop quantities altogether ... 
     ## 
-    var = "123"
-    return jsonify({"variable": var})
+
+   return jsonify(my_func())
+
 
 @app.route('/sign_up')
 def signup():
@@ -77,33 +76,4 @@ def signup():
     return jsonify({"status": isLoggedIn}) 
     
     print(password)
-    #return jsonify({"content": True if username == "ryan" else False })
-    # return jsonify({"content": True if (username,password) == auth.sign_in_with_email_andpassword(email, password_) else False})
-#   email=input("Enter Email: ")
-#   password=input("Enter Password: ")
-#   try:
-
-#     return app.send_static_file("index.html")
-#     user=auth.create_user_with_email_andpassword(email_,password_)
-#     print("Success")
-#   except:
-#     print("TRY AGAIN")
-
-
-# localhost:500/login
-# @app.route("/login")
-# def login():
-#   email = input("Enter Email: ")
-#   password = input("Enter Password: ")
-#   try:
-#     # user = auth.sign_in_with_email_andpassword(email, password_)
-#     print("Success")
-#   except:
-#     print("TRY AGAIN")
-
-# login()
-
-# if __name__ == '__main__':
-#     app.run()
-
-#only here for adding the gorcery tags below
+    #
