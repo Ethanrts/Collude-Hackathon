@@ -1,17 +1,16 @@
 from creaet_db import my_func
-
+import pyrebase
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
 # import cgi
 # form = cgi.FieldStorage()
 
 
-
-# initialize sdk
-# cred = credentials.Certificate("collude-58309-firebase-adminsdk-qd4m1-1925d38b46.json")
-# firebase_admin.initialize_app(cred)
-# # initialize firestore instance
-# firestore_db = firestore.client()
+initialize sdk
+cred = credentials.Certificate("collude-58309-firebase-adminsdk-qd4m1-1925d38b46.json")
+firebase_admin.initialize_app(cred)
+# initialize firestore instance
+firestore_db = firestore.client()
 
 
 
@@ -22,20 +21,20 @@ CORS(app)
 # email = form.getvalue('email')
 # password_ = form.getvalue('password')
 
-# firebaseConfig = {
-#   'apiKey': "AIzaSyA_QO6UfhhGyYv_HUVtOQnDqEJjPIefOGU",
-#   'authDomain': "collude-58309.firebaseapp.com",
-#   'projectId': "collude-58309",
-#   'storageBucket': "collude-58309.appspot.com",
-#   'messagingSenderId': "547641500704",
-#   'appId': "1:547641500704:web:4c91263a884dd6fd960845",
-#   'measurementId': "G-DMVZKWYXQN",
-#   'databaseURL': ""}
+firebaseConfig = {
+  'apiKey': "AIzaSyA_QO6UfhhGyYv_HUVtOQnDqEJjPIefOGU",
+  'authDomain': "collude-58309.firebaseapp.com",
+  'projectId': "collude-58309",
+  'storageBucket': "collude-58309.appspot.com",
+  'messagingSenderId': "547641500704",
+  'appId': "1:547641500704:web:4c91263a884dd6fd960845",
+  'measurementId': "G-DMVZKWYXQN",
+  'databaseURL': ""}
 
-# # connect to firebase acc
-# firebase=pyrebase.initialize_app(firebaseConfig)
+# connect to firebase acc
+firebase=pyrebase.initialize_app(firebaseConfig)
 
-# auth=firebase.auth()
+auth=firebase.auth()
 
 @app.route('/login')
 def login():
