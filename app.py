@@ -62,19 +62,8 @@ def list_page():
   ## front end needs to create tags for each product name and its category 
     ## if we create tags, clicking on them will add them to the list .. so we may just drop quantities altogether ... 
     ## 
-
-  category_string = ''
-  product_name = ''
-  quantity_var = ''
-<<<<<<< HEAD
-  #firestore_db.collection(u'Grocery_Tags').add({'Category': 'Dairy', 'Product Name': product_name})
-=======
-  #firestore_db.collection(u'Grocery_Tags').add({'Category': 'Protein', 'Product Name': 'A5 Wagyu'})
->>>>>>> 38ee31e182e05a374d688c20cde824ba5869b98c
-
-#   snapshots = list(firestore_db.collection(u'Grocery_Tags').get())
-  for snapshot in snapshots:
-    print(snapshot.to_dict())
+    var = "123"
+    return jsonify({"variable": var})
 
 @app.route('/sign_up')
 def signup():
