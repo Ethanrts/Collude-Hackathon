@@ -35,21 +35,45 @@ def login():
     email = request.args.get('email')
     password = request.args.get('password')
 
-    print("u dont beleive me")
-    print(email, password)
+    email_check = "aalsu013@ucr.edu"
+    password_check = "testing"
+
+    # if(email == email_check and password == password_check):
+      
+    #   list_page()
+    
+    # else:
+      #html display try again 
+
+    #print(email, password)
     # check database if this email/pw combo is correct
-    isLoggedIn = True if email == 'hi@ucr.edu' else False
+    isLoggedIn = True if (email == email_check and password == password_check) else False
+     
 
     return jsonify({"status": isLoggedIn, "groceries": ['eggs', 'fish', 'stek']})
 
-@app.route('/add_region', methods =['POST'])
-def signup():
-    username = request.args.get('username')
-    password = request.args.get('password')
-    print(username)
-    print(request.form['email'])
+    #return jsonify({"status": isLoggedIn, ## here })
 
-    return (request.form['email'])
+
+@app.route('/list')
+def list_page():
+  print("here")
+  ## add items to database 
+  ## front end needs to create tags for each product name and its category 
+    ## if we create tags, clicking on them will add them to the list .. so we may just drop quantities altogether ... 
+    ## 
+
+
+
+@app.route('/sign_up')
+def signup():
+    email = request.args.get('email')
+    password = request.args.get('password')
+    isLoggedIn = True 
+   
+    ## after signing up, display some sort of success screen -- html 
+    ## go striaght to the list_page / grocery list web page 
+    return jsonify({"status": isLoggedIn}) 
     
     print(password)
     #return jsonify({"content": True if username == "ryan" else False })
@@ -80,5 +104,3 @@ def signup():
 
 # if __name__ == '__main__':
 #     app.run()
-
-()
