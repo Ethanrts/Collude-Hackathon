@@ -233,3 +233,24 @@ input {
     margin-top: 85%;
     z-index: 200;
 }
+
+.result h2 {
+    z-index: 100;
+    font-family: noh-sori, sans-serif;
+    font-size: 40px;
+    top: 80px;
+    left: 15%;
+    top: 20%;
+}
+
+.result {
+    width: 100%;
+    z-index: 2;
+    background: url(./images/welcomepage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+}
