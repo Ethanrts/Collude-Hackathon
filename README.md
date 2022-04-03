@@ -5,13 +5,13 @@ Hello, we are team Collude, bringing you a collaborative grocery list applicatio
 Welcome to Collude; we are an app developed by and for grocery shoppers looking to maximize their efficiency in going about their shopping routines. The idea for a collaborative grocery list was spawned as a result of members agreeing that coordinating grocery shopping with room/housemates is a complete mess in its current state. Additionally, the psychological manipulation of major grocery store chains in order to get broke students to spend more money-- just kidding. 
 
 
-Therefore, this app is designed to reduce the inefficiency of having to update others of changes through a group chat while switching apps to a notepad or checklist. We knew we wanted our project to have the identity of creating a solution to that, and preliminary ideas centered around the dynamic list and a secure login system. 
+This app is designed to reduce the inefficiency of having to update others of changes through a group chat while switching apps to a notepad or checklist while remaining goal-oriented and sticking to an agreed upon shopping list. We knew we wanted our project to base its identity around accomplishing that, and preliminary ideas centered around the dynamic list and a login system for different users. 
 
 ## Features
 - Secure sign-in using email and password authentication
 - Dynamic lists allow for real-time edits
 - Completion feature: check items off the list as you progress
-- Create several unique lists for your needs
+- Create unique lists for your needs
 - Optimized displays for mobile devices
 - 'Collaborate' feature in progress for shared goals between multiple people on one list
 
@@ -25,7 +25,7 @@ Collude was built using elements of Python, Javascript, HTML, and CSS, combining
 
 ## Challenges
 
-The project faced many setbacks and shortcomings during the allotted 24 hours; we quickly figured out that we hardly knew a thing about building or connecting the front and back ends of the app. Despite that, we spent the first half day understanding and slowly working through the basics of the firestore API, our login system, and coding a dynamic display for the list screen.
+The project faced many setbacks and shortcomings during the allotted 24 hours; we quickly figured out that we hardly knew a thing about building or connecting the front and back ends of the app. Despite that, we spent the first half day understanding and slowly working through the basics of the firestore API, databases, our login system, and coding a dynamic display for the list screen.
 
 
 
