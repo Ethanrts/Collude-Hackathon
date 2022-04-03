@@ -1,8 +1,8 @@
-# 'from urllib.request import Request
-import firebase_admin
-from firebase_admin import credentials, firestore
+# from urllib.request import Request
+# import firebase_admin
+# from firebase_admin import credentials, firestore
 
-import pyrebase
+# import pyrebase
 from tkinter import EW
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
@@ -10,10 +10,10 @@ from flask_cors import CORS
 # form = cgi.FieldStorage()
 
 # initialize sdk
-cred = credentials.Certificate("collude-58309-firebase-adminsdk-qd4m1-1925d38b46.json")
-firebase_admin.initialize_app(cred)
-# initialize firestore instance
-firestore_db = firestore.client()
+# cred = credentials.Certificate("collude-58309-firebase-adminsdk-qd4m1-1925d38b46.json")
+# firebase_admin.initialize_app(cred)
+# # initialize firestore instance
+# firestore_db = firestore.client()
 
 
 
@@ -74,9 +74,9 @@ def list_page():
   category_string = ''
   product_name = 'Almond Milk'
   quantity_var = ''
-  firestore_db.collection(u'Grocery_Tags').add({'Category': 'Dairy', 'Product Name': product_name})
+  #firestore_db.collection(u'Grocery_Tags').add({'Category': 'Dairy', 'Product Name': product_name})
 
-  snapshots = list(firestore_db.collection(u'Grocery_Tags').get())
+#   snapshots = list(firestore_db.collection(u'Grocery_Tags').get())
   for snapshot in snapshots:
     print(snapshot.to_dict())
 
@@ -122,4 +122,3 @@ def signup():
 #     app.run()
 
 #only here for adding the gorcery tags below
-list_page()
