@@ -35,13 +35,5 @@ while (count > 0):
         if (count == 0):
             break
 
-def main():
-    first_header = 'testing'
-
-    # Read the HTML file
-    HTML_File=open('list.html','r')
-    s = HTML_File.read().format(p=main())
-    print(s)
-
-main()
+index = open("list.html").read().format(first_header='testing')
 
