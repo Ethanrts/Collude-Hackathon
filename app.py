@@ -47,17 +47,9 @@ def login():
     email_check = "aalsu013@ucr.edu"
     password_check = "testing"
 
-    # if(email == email_check and password == password_check):
-      
-    #   list_page()
-    
-    # else:
-      #html display try again 
-
     #print(email, password)
     # check database if this email/pw combo is correct
     isLoggedIn = True if (email == email_check and password == password_check) else False
-     
 
     return jsonify({"status": isLoggedIn, "groceries": ['eggs', 'fish', 'stek']})
 
@@ -72,9 +64,9 @@ def list_page():
     ## 
 
   category_string = ''
-  product_name = 'Almond Milk'
+  product_name = ''
   quantity_var = ''
-  firestore_db.collection(u'Grocery_Tags').add({'Category': 'Dairy', 'Product Name': product_name})
+  #firestore_db.collection(u'Grocery_Tags').add({'Category': 'Protein', 'Product Name': 'A5 Wagyu'})
 
   snapshots = list(firestore_db.collection(u'Grocery_Tags').get())
   for snapshot in snapshots:
