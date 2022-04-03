@@ -1,29 +1,36 @@
 # COLLUDE
-A collaborative grocery list 
+Hello, we are team Collude, bringing you a collaborative grocery list application at Citrus Hack 2022. We are a team of four novice python, javascript, html, and css users, three among which who are first-time hackathon participants. We'd like to give a shout-out to all the organizers and mentors who helped make our project a reality!
 
+## Why Collude?
+Welcome to Collude; we are an app developed by and for grocery shoppers looking to maximize their efficiency in going about their shopping routines. The idea for a collaborative grocery list was spawned as a result of members agreeing that coordinating grocery shopping with room/housemates is a complete mess in its current state.  Therefore, this app is designed to reduce the inefficiency of having to update others of changes through a group chat while switching apps to a notepad or checklist. We knew we wanted our project to have the identity of creating a solution to that, and preliminary ideas centered around the dynamic list and a secure login system. \
 
-## About
-Welcome to Collude; we are an app developed by and for grocery shoppers looking to maximize their efficiency in going about their shopping routines. \
-Features of the app include:
+## Features
 - Secure sign-in using email and password authentication
 - Dynamic lists allow for real-time edits
-- Check items off the list as you progress
+- Completion feature: check items off the list as you progress
 - Create several unique lists for your needs
-- Optimized for mobile phone displays
-- Collaborate feature in progress for shared goals
+- Optimized displays for mobile devices
+- 'Collaborate' feature in progress for shared goals between multiple people on one list
 
 
 ## Development
 
 Collude was built using elements of Python, Javascript, HTML, and CSS, combining front and back-end to create a fully sufficient application. 
-- Backend Python for login and security
-- HTML and CSS for front end aesthetics and appearance
-\
-\
-![](https://snipboard.io/1PFcbn.jpg) 
-![](https://snipboard.io/CkS98w.jpg) 
-![](https://snipboard.io/y7f2jY.jpg) 
-![](https://snipboard.io/aOsmJt.jpg)
+- Back-end Python for login and security
+- Javascript for client-server connection
+- HTML and CSS for front-end aesthetics and appearance
+
+## Challenges
+
+The project faced many setbacks and shortcomings during the allotted 24 hours; we quickly figured out that we hardly knew a thing about building or connecting the front and back ends of the app. Despite that, we spent the first half day understanding and slowly working through the basics of python's firestore api for our login system, then coding a dynamic display for the list screen.
+
+
+
+## Application Design & Screenshots
+![](https://snipboard.io/zp5Tei.jpg) 
+![](https://snipboard.io/p69HYG.jpg) 
+![](https://snipboard.io/MrDliv.jpg) 
+![](https://snipboard.io/quXsxG.jpg)
 
 
 
