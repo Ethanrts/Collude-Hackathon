@@ -37,30 +37,24 @@
         })(document);
     </script>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js">
-    </script>
 </head>
 
 <body>
-    <div class="signin">
+    <div class="welcome">
         <div class="home1">
             <a href="index.html" class="close"></a>
-            <h2>Welcome</h2>
-            <div class="format">
-                <input type="email" id="email" name="email" placeholder="username">
-                <input type="password" id="password" name="password" placeholder="password">
-                <a href="welcome.html"><input type="submit" value="sign in"></a>
-            </form>
-                <button onclick="submit()">sign in</button>
-                <!-- <input type="submit" value="sign in" onclick="submit()"> -->
-            </div>
-
-            <a href="signup.html" class="signup">
-                <button>sign up here</button>
+            <h2>Welcome back!</h2>
+            <form action="/cgi-bin/authone.py" method="get" class="format">
+                
+                <a href="signup.html" class="signup"> <!--replace signup with make a new list-->
+                <button>make a new list</button>
             
             </a>
+            </form>
+            
             <a href="welcome.html"><img class="signin" src="./images/homepage.jpg" alt="signin"></a> <!--test line-->
         </div>
+        <!-- <img class="home1" src="./images/homepage.jpg" alt="home"> -->
     </div>
 </body>
 
