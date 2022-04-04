@@ -48,4 +48,4 @@ In the future, we would like to add the following:
 
 
 
-> Created by: Amneh Alsuqi, Sakhee Parekh, Jane Ran, and Ethan Liu
+> Created by: Ethan Liu, Amneh Alsuqi, Sakhee Parekh, and Jane Ran
